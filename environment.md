@@ -144,7 +144,7 @@ Part 3 的平均词向量方法会生成：
 Word2Vec_AverageVectors.csv
 ```
 
-Part 3 如果开启 Bag of Centroids，会生成：
+Part 3 的 Bag of Centroids 方法会生成：
 
 ```text
 BagOfCentroids.csv
@@ -158,16 +158,16 @@ Part 3 里有 Bag of Centroids 方法。
 
 它需要对所有词向量做 KMeans 聚类，原教程也提到这一步可能很慢。
 
-为了避免 notebook 默认运行时间过长，我把这部分开关设成：
-
-```python
-RUN_BAG_OF_CENTROIDS = False
-```
-
-如果要完整复现教程，把它改成：
+为了更贴近 Kaggle 原教程，我把这部分开关设成：
 
 ```python
 RUN_BAG_OF_CENTROIDS = True
+```
+
+如果只是快速演示，想跳过这一步，可以把它改成：
+
+```python
+RUN_BAG_OF_CENTROIDS = False
 ```
 
 ## 8. 本地运行提醒
